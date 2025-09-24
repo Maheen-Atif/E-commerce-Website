@@ -38,6 +38,6 @@ signinForm.addEventListener("submit", function (e) {
         document.getElementById("hiddenSection").append(msg);
         setTimeout(() => msg.remove(), 2000);
 
-        window.location.href = "index.html";
+        window.location.href = "index2.html";
     }
 });

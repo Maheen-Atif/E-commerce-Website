@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class=" p-3 flex justify-between items-center bg-blue-500">
+            <div >
+                <i class="fa-solid fa-cart-shopping text-white m-[5px] text-2xl "></i><span class="text-2xl text-white font-bold p-2 hidden lg:inline"> E-Commerce</span>
+            </div>
+        
+            
+        </nav>
+        <div id="hiddenSection" class="justify-center items-center "></div>
+    <form class="flex flex-col justify-center items-center gap-[20px] m-[80px]" id="signup">
+        <h1 class="text-3xl font-bold">SignIn </h1>
+        <div class="flex flex-col">
+            <label>User's Email : </label>
+            <input type="text" placeholder="Enter Email..." class="border-2 rounded-md p-[6px] w-[250px]" id="mail">
+        </div>
+        <div class="flex flex-col">
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password..." class="border-2 rounded-md p-[6px] w-[250px]" id="pass1">
+        </div>
+        
+        <button class="rounded-md p-[6px] w-[250px] text-white bg-blue-500
+       hover:bg-blue-950" >
+            SignIn
+        </button>
+        <p>Don't have an account ? <a href="index.html" class="text-blue-500 underline">SignUp</a></p>
+       
+    </form>
+    <script src="SignIn.js"></script>
+    
+</body>
+</html>

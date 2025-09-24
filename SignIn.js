@@ -1,11 +1,11 @@
-let signinForm = document.getElementById("signup"); // 👈 yahan form ka id different rakho
+let signinForm = document.getElementById("signup"); 
 signinForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
     let email = document.getElementById("mail").value.trim();
     let password1 = document.getElementById("pass1").value;
 
-    let storedUser = JSON.parse(localStorage.getItem("userData")); // object milega
+    let storedUser = JSON.parse(localStorage.getItem("userData")); 
 
     if (email === "" || password1 === "") {
         const msg = document.createElement("div");

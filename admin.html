@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <div>
+    <nav class="p-3 flex justify-between items-center border-y-2 border-gray-200">
+      <div>
+        <a href="index2.html"><i class="fa-solid fa-cart-shopping text-blue-500 m-[5px] text-2xl"></i><span
+            class="text-2xl text-black font-bold p-2 hidden lg:inline">
+            E-Commerce</span></a>
+      </div>
+      <div class="lg:flex hidden gap-6">
+        <a href="index2.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <a href="cart.html" class="relative">
+          <i class="fa-solid fa-cart-shopping text-2xl m-[5px]"></i>
+          <span class="absolute -top-3.2 -right-1 bg-red-500 text-white text-xs px-2 py-1 rounded-full hidden"
+            id="cartCount"></span>
+        </a>
+
+        <a href="wishlist.html" class="relative">
+          <i class="fa-solid fa-hand-holding-heart text-2xl m-[5px]"></i>
+          <span class="absolute -top-3.2 -right-1 bg-red-500 text-white text-xs px-2 py-1 rounded-full hidden"
+            id="wishCount"></span>
+        </a>
+
+        <a href="admin.html"><button class="bg-blue-500 text-white p-2 rounded-lg m-[5px] hidden lg:inline">
+            Admin Dashboard
+          </button></a>
+        <div class="inline lg:hidden">
+          <button id="menuBtn">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden flex flex-col gap-4 bg-gray-100 p-4 lg:hidden sticky w-[100%] justify-center items-center">
+      <a href="index2.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html"><button class="bg-blue-500 text-white p-2 rounded-lg m-[5px] " >
+                        Admin Dashboard</button></a>
+    </div>
+    <div class="flex justify-center items-center bg-gray-300">
+      <div class="flex flex-col my-[100px] gap-6 bg-white p-[20px] rounded-lg w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%]">
+        <h1 class="text-2xl text-blue-500 font-bold text-center">Log in</h1>
+
+        <div class="flex flex-col">
+          <label>Email</label>
+          <input type="email" placeholder="Enter email" class="border-2 border-gray-200 p-[5px] rounded-lg"
+            id="usernameemail" />
+        </div>
+        <div class="flex flex-col">
+          <label>Password</label>
+          <input type="password" placeholder="Enter password" class="border-2 border-gray-200 p-[5px] rounded-lg"
+            id="usernamePassword" />
+        </div>
+
+        <a><button class="bg-blue-500 text-white w-[100%] p-[15px] rounded-lg" id="loginButton">
+            Login
+          </button></a>
+      </div>
+    </div>
+    <footer class="bg-blue-950">
+      <div class="flex justify-between p-[30px] flex-wrap">
+        <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+          <h1 class="text-xl font-bold text-white">E-Commerce</h1>
+          <p class="text-white">
+            Your one-stop shop for the latest trends in fashion, electronics,
+            and lifestyle. Shop smart. Shop easy.
+          </p>
+        </div>
+        <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+          <h1 class="text-xl font-bold text-white">Quick Links</h1>
+          <ul class="text-white">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Dashboard</li>
+          </ul>
+        </div>
+        <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+          <h1 class="text-xl font-bold text-white">Customer Service</h1>
+          <ul class="text-white">
+            <li>Privacy Policy</li>
+            <li>Terms and Conditionss</li>
+            <li>Help and Support</li>
+          </ul>
+        </div>
+        <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+          <h1 class="text-xl font-bold text-white">Contact Us</h1>
+          <ul class="text-white">
+            <li>
+              <i class="fa-solid fa-location-dot"></i> lahore , Pakistan
+            </li>
+            <li><i class="fa-solid fa-envelope"></i> support@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i> +92 312 3456789</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-white border-t-2 border-white p-[30px]">
+        © 2025 E-Commerce. All rights reserved.
+      </p>
+    </footer>
+  </div>
+  <script src="admin.js"></script>
+</body>
+
+</html>

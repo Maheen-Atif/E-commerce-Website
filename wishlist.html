@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-200">
+    <div>
+        <nav class=" p-3 flex justify-between items-center border-y-2 border-gray-200 bg-white">
+            <div>
+                <a href="index2.html"><i class="fa-solid fa-cart-shopping text-blue-500 m-[5px] text-2xl "></i><span class="text-2xl text-black font-bold p-2 hidden lg:inline"> E-Commerce</span></a>
+            </div>
+            <div class="lg:flex hidden gap-6">
+                <a href="index2.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <a href="cart.html" class="relative"><i class="fa-solid fa-cart-shopping text-2xl m-[5px]"></i>
+        <span class="absolute -top-3.2 -right-1 bg-red-500 text-white text-xs px-2 py-1 rounded-full hidden" id="cartCount"></span></a>
+        <a href="wishlist.html" class="relative"><i class="fa-solid fa-hand-holding-heart text-2xl m-[5px]"></i>
+         <span class="absolute -top-3.2 -right-1 bg-red-500 text-white text-xs px-2 py-1 rounded-full hidden" id="wishCount"></span></a>
+                <a href="admin.html"><button class="bg-blue-500 text-white p-2 rounded-lg m-[5px] hidden lg:inline"> Admin Dashboard</button></a>
+                <div class="inline lg:hidden">
+                    <button id="menuBtn">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </nav>
+        <div id="mobileMenu" class="hidden flex flex-col gap-4 bg-gray-100 p-4 lg:hiddensticky w-[100%] justify-center items-center ">
+                    <a href="index2.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="admin.html"><button class="bg-blue-500 text-white p-2 rounded-lg m-[5px] " >
+                        Admin Dashboard</button></a>
+                </div>
+        <div id="hiddenSection" class="justify-center items-center " ></div>
+        <section class="flex flex-col gap-6 justify-center items-center m-[30px] flex-wrap ">
+            <h1 class="text-4xl font-bold">Your Wishlist</h1>
+            <div class="w-[90%]">
+                <div class="flex gap-3.5 flex-wrap justify-center items-center " id="productWish">
+                </div>
+            </div>
+        </section>
+        <footer class="bg-blue-950">
+            <div class="flex justify-between p-[30px] flex-wrap ">
+                <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+                    <h1 class="text-xl font-bold text-white">E-Commerce</h1>
+                    <p class="text-white">Your one-stop shop for the latest trends in fashion, electronics, and lifestyle. Shop smart. Shop
+                        easy.</p>
+                </div>
+                <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+                    <h1 class="text-xl font-bold text-white">Quick Links</h1>
+                    <ul class="text-white">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Dashboard</li>
+                    </ul>
+
+                </div>
+                <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+                    <h1 class="text-xl font-bold text-white">Customer Service</h1>
+                    <ul class="text-white">
+                        <li>Privacy Policy</li>
+                        <li>Terms and Conditionss</li>
+                        <li>Help and Support</li>
+                    </ul>
+
+                </div>
+                <div class="w-[90%] sm:w-[40%] lg:w-[22%] pt-[10px]">
+                    <h1 class="text-xl font-bold text-white">Contact Us</h1>
+                    <ul class="text-white">
+                        <li><i class="fa-solid fa-location-dot"></i> lahore , Pakistan</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +92 312 3456789</li>
+                    </ul>
+                    
+
+                </div>    
+
+            </div>
+            <p class="text-center text-white border-t-2 border-white p-[30px]">© 2025 E-Commerce. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="wishlist.js">
+    </script>
+</body>
+</html>
